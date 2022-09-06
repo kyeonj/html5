@@ -7,6 +7,8 @@
     <title>html연습 05 - 미디어 관련</title>
 </head>
 <body>
+    <h1>미디어 관련 요소</h1>
+    <h2>이미지 5개 이상 - jpg(jfif), png, gif, webp, svg</h2>
     <div class="weap">
         <ul>
             <li><img src="../동영상/cat-2536662__340.webp" alt="고양이" title="애기고양이"></li>
@@ -15,17 +17,129 @@
             <li><img src="../동영상/programmer-1653351_960_720.webp" alt="코딩" title="코딩"></li>
             <li><img src="../동영상/roses-1463562__340.jpg" alt="꽃" title="장미꽃"></li>
         </ul>
+        <img src="../동영상/태극기.webp" alt="태극기"
     </div>
+    <h2>동영상 3개 이상 - mp4, webm, ogv</h2>
     <div>
         <ul>
             <li>
-                <video src="../동영상/(여자)아이들((G)I-DLE) - 'MY BAG' (Choreography Practice Video).mp4" poster="../동영상/jwy.jpg"controls muted></video>
+                <video src="../동영상/MY BAG .mp4" poster="../동영상/jwy.jpg"controls autiplay muted loop></video>
+                <div class="comment">
+                    <h3>video 요소의 태그 속성</h3>
+                    <p>src : 해당 비디오 파일의 경로(위치와 파일명)</p>
+                    <p>posrer : 대기화면(썸네일) 이미지의 파일 경로</p>
+                    <p>controls : 비디오 재생 제어 패널 표시</p>
+                    <p>autoplay : 자동재생</p>
+                    <p>muted : 무음처리(자동 재생시 반드시 필요함)</p>
+                    <p>loop : 반복 재생</p>
+                    <p>width : 폭, height : 높이</p>
+                </div>
             </li>
             <li>
-                <video src=""></video>
+                <video width="800" height="600" controls loop>
+                    <source src="../동영상/LOVE DIVE 1.mp4" type="video/mp4">
+                    <source src="../동영상/MY-BAG.webm" type="video/webm">
+                    <source src="../동영상/ghlwjsahrak.mp4" type="video/ogg">
+                </video>
+                <div class="comment">
+                    <h3>브라우저 마다 재생가능한 파일</h3>
+                    <p>mp4, webm, ogv 파일이 브라우저 마다 각지 다르게 재생 기능 제공됨</p>
+                    <table border="1">
+                        <thead>
+                            <tr><th>브라우저</th><th>MP4</th><th>Webm</th><th>Ogv</th></tr>
+                        </thead>
+                         <tbody>
+                             <tr>
+                                  <td>Internet Explorer</td><td>Yes</td><td>No</td><td>No</td>
+                             </tr>
+                             <tr>
+                                 <td>Chrome</td><td>Yes</td><td>Yes</td><td>Yes</td>
+                             </tr>
+                            <tr>
+                                <td>Firefox</td><td>Yes</td><td>Yes</td><td>Yes</td>
+                            </tr>
+                             <tr>
+                                <td>Safari</td><td>Yes</td><td>No</td><td>No</td>
+                            </tr>
+                            <tr>
+                                <td>Opera</td><td>Yes</td><td>Yes</td><td>Yes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </li>
             <li>
-                <video src=""></video>
+                <iframe width="900" height="506" src="https://www.youtube.com/embed/gQlMMD8auMs" 
+                title="BLACKPINK - ‘Pink Venom’ M/V" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+            </li>
+        </ul>
+    </div>
+    <h2>사운드 3개 이상 - mp3, ogg, wav</h2>
+    <div class="wrap">
+        <ul>
+            <li><audio src="../temp/i1.mp3" controls ></audio>
+                <div class="comment">
+                    <h3>audio 요소의 태그 속성</h3>
+                    <p>src : 해당 오디오 파일의 경로(위치와 파일명)</p>
+                    <p>controls : 오디오 재생 제어 패널 표시</p>
+                    <p>autoplay : 자동재생</p>
+                    <p>muted : 무음처리(자동 재생시 반드시 필요함)</p>
+                    <p>loop : 반복 재생</p>
+                </div>
+            </li>
+            <li>
+                <audio controls>
+                    <source src="../temp/i1.mp3" type="audio/mp3">
+                    <source src="../temp/i1.wav" type="audio/wav">
+                    <source src="../temp/i1.ogg" type="audio/ogg">
+                </audio>
+                <div class="comment">
+                    <h3>브라우저 마다 재생가능한 파일</h3>
+                    <p>mp3, wav, ogg 파일이 브라우저 마다 각기 다르게 재생 기능 제공됨</p>
+                    <table border="1">
+                        <thead>
+                            <tr><th>브라우저</th><th>MP3</th><th>WAV</th><th>OGG</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Internet Explorer</td><td>YES</td><td>No</td><td>No</td>
+                            </tr>
+                            <tr>
+                                <td>Chrome</td><td>YES</td><td>Yes</td><td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Firefox</td><td>YES</td><td>Yes</td><td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Safari</td><td>YES</td><td>Yes</td><td>No</td>
+                            </tr>
+                            <tr>
+                                <td>Opera</td><td>YES</td><td>Yes</td><td>Yes</td>
+                            </tr>                            
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+            <li>
+                <div class="comment">
+                    <p class="imp" style="font-size:20px; color:red">※ audio/video의 내장 관련 태그로 embed나 object를 활용했었으나 html5 웹 표준에서는 플래시와 같은 플러그인의 사용 금지로 잘 사용하지 않음</p>
+                    <embed src="../temp/j1.mp3" type="audio/mp3">
+                    <object data="../temp/j1.mp4" type="video/mp4" width="400" height="300">
+                        현재 사용 중인 브라우저는 object 요소를 지원하지 않습니다!
+                    </object>
+                    <h3>embed/object 의 태그 속성</h3>
+                    <p>src 또는 data : 해당 동영상, 오디오, 플래시, pdf 파일의 경로</p>
+                    <p>width : 폭, height : 높이</p>
+                    <p>loop : 반복 재생</p>
+                    <p>autostart : 자동재생</p>
+                    <p>mute : 무음처리(자동 재생시 반드시 필요함)</p>
+                    <p>hidden : 오디오 파일과 같이 화면에 표시하지 않는 경우 숨김</p>
+                    <p>volume : 볼륨(소리)의 크기 지정</p>
+                    <p>showcontrols : 미디어 재생 제어 패널 표시</p>
+                    <p>type : 해당 video나 audio와 같은 미디어의 타입을 선언</p>
+                </div> 
             </li>
         </ul>
     </div>
