@@ -23,12 +23,12 @@
                         </tr>
                         <tr>
                             <th><label for="pw">비밀번호</label></th>
-                            <td><input type="password" name="pw" id="pw" size="70"
-                                 maxlength="14" placeholder="비밀번호 최대 14글자"></td>
+                            <td><input type="password" name="pw" id="pw" size="70" 
+                                maxlength="14" placeholder="비밀번호 최대 14글자" required></td>
                         </tr>
                         <tr>
                             <th><label for="pw2">비밀번호 확인</label></th>
-                            <td><input type="password" name="pw" id="pw2"></td>
+                            <td><input type="password" name="pw" id="pw2" required></td>
                         </tr>
                         <tr>
                             <th><label for="name">이름</label></th>
@@ -62,33 +62,45 @@
                                 &nbsp;&nbsp;&nbsp;
                                 <input type="checkbox" name="obj" id="obj3" checked>
                                 <label for="obj3">자격취득</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>지역</th>
-                            <td>
-                                <select name="sel" id="sel">
-                                    <option value="">선택안함</option>
-                                    <option value="1">수도권</option>
-                                    <option value="2">경상권</option>
-                                    <option value="3"></option>
-                                </select>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </fieldset>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </fieldset>    
             <fieldset>
                 <legend>추가정보</legend>
                 <table>
                     <tbody>
                         <tr>
                             <th><label for="age">나이</label></th>
-                            <td><input type="number" nama="age" id="age"</td>
+                            <td><input type="number" nama="age" id="age" max="200" min="0" step="2"</td>
                         </tr>
                         <tr>
-                            <th></th>
-                            <td><input type="submit"</td>
+                            <th><label for="birth">생년월일</label></th>
+                            <td><input type="date" name="birth" id="birth"></td>
+                        </tr>
+                        <tr>
+                            <th><label for="color">좋아하는 색상</label></th>
+                            <td><input type="color" name="color" id="color"></td>
+                        </tr>
+                        <tr>
+                            <th>하고 싶은 말</th>
+                            <td>
+                                <textarea name="memo" id="memo" cols="70" rows="10"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>사진</th>
+                            <td>
+                                <input type="file" name="file" id="file">
+                                <input type="range" id="pic_size" max="" min="">
+                                <input type="hidden" id="idck" name="idck" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="회원가입"></td>
+                            <td><input type="reset" value="취소"></td>
                         </tr>
                     </tbody>
                 </table>
